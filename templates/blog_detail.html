@@ -1,0 +1,41 @@
+<!-- blog_detail.html -->
+
+{% extends "base.html" %}
+{% block content %}
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-lg-8">
+            <article class="blog-post">
+                <header class="mb-4">
+                    <h1 class="blog-post-title">{{ blog.title }}</h1>
+                    <p class="blog-post-meta">Published on {{ blog.date_posted }} by {{ blog.author }}</p>
+                </header>
+                <img src="{{ blog.image_url }}" alt="Blog Image" class="img-fluid mb-4">
+                <p>{{ blog.content }}</p>
+            </article>
+        </div>
+        <div class="col-lg-4">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Recent Posts</h5>
+                    <ul class="list-unstyled">
+                        {% for post in recent_posts %}
+                        <li><a href="/blogs/{{ post.id }}">{{ post.title }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Categories</h5>
+                    <ul class="list-unstyled">
+                        {% for category in categories %}
+                        <li><a href="#">{{ category }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

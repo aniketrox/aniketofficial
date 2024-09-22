@@ -1,0 +1,316 @@
+body {
+    padding-top: 56px;
+}
+
+.navbar {
+    background: linear-gradient(90deg, rgba(29, 78, 216, 1) 0%, rgba(147, 51, 234, 1) 100%);
+    border-bottom: 3px solid rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #ffffff;
+    font-weight: 500;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #f8f9fa;
+    transform: scale(1.1);
+}
+
+.card {
+    margin-bottom: 1rem;
+    border: none;
+    animation: fadeInUp 1s ease-out;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card-title {
+    font-size: 2rem;
+    animation: fadeInDown 1s ease-out;
+}
+
+.card-subtitle {
+    animation: fadeInDown 1s ease-out;
+}
+
+.card-text {
+    font-size: 1.2rem;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.btn-secondary {
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    transform: translateY(-5px);
+}
+
+.btn-primary {
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #007bff;
+    transform: translateY(-5px);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+
+/* styles.css or embedded in base.html */
+
+/* Blog Card Styles */
+.blog-card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.blog-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-size: 1.2rem;
+}
+
+.card-text {
+    color: #6c757d;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .col-lg-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* styles.css */
+
+
+
+.text-container {
+    position: relative;
+    height: 100px; /* Adjust height based on your text size */
+    /* overflow: hidden; */
+}
+
+.text-animation {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    animation: textFade 8s infinite;
+}
+
+.text-animation:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.text-animation:nth-child(2) {
+    animation-delay: 2s;
+}
+
+.text-animation:nth-child(3) {
+    animation-delay: 4s;
+}
+
+.text-animation:nth-child(4) {
+    animation-delay: 6s;
+}
+
+@keyframes textFade {
+    0% { opacity: 0; }
+    5% { opacity: 1; }
+    25% { opacity: 1; }
+    30% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+/* Add any additional styling here to match the design */
+.about-boss-page {
+    padding: 60px 0;
+}
+
+.boss-photo img {
+    max-width: 200px;
+    transition: transform 0.3s ease;
+}
+
+.boss-photo img:hover {
+    transform: scale(1.1);
+}
+
+
+.photo-text {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+
+
+/* Add responsive styles */
+@media (max-width: 768px) {
+    .photo-text {
+        font-size: 1em;
+    }
+}
+
+
+
+
+
+.bio-text {
+    font-size: 1.2em;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+
+
+/* Add responsive styles */
+@media (max-width: 768px) {
+    .bio-text {
+        font-size: 1em;
+        text-align: justify;
+    }
+}
+
+
+.extra-text-heading {
+    /* font-size: 1.2em; */
+    line-height: 1.6;
+    text-align: Left;
+}
+
+.extra-text {
+    font-size: 1.2em;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+
+
+/* Add responsive styles */
+@media (max-width: 768px) {
+    .extra-text {
+        font-size: 1em;
+        text-align: justify;
+    }
+}
+
+
+/* Animation */
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 40px, 0);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
+}
+
+/* Existing CSS */
+
+/* Contact Us Section */
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+#contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+#contact-form .form-control {
+    padding: 10px;
+    font-size: 1em;
+}
+
+#contact-form .btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 11px;
+}
+
+#contact-form .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 40px, 0);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}

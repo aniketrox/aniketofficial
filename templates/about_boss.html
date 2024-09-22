@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block title %}About the Boss{% endblock %}
+
+{% block content %}
+<div class="about-boss-page container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h3>Mr. Aniket Guchhait</h3>
+            <p>Deep Learning Developer (R&D)</p>
+            <div class="boss-photo">
+                <img src="{{ url_for('static', filename='images/boss.jpeg') }}" alt="Boss Photo" class="img-fluid rounded-circle mt-4 mb-4 animated fadeInUp">
+            </div>
+            <h5 class="photo-text">Hi all !! He is Aniket</h5>
+            <p class="bio-text">Final year B.Tech. undergrad in Computer Science & Engineering from RKMGEC, Purulia. 
+                He started exploring Deep Learning and Computer Vision from 2nd year of B.Tech. In 2024, He secured <b>AIR 393</b> in GATE-Data Science & Artificial Intelligence(DA) paper
+                and <b>AIR 782</b> in CS-IT paper. Besides being a GATE topper He was also selected as Summer Research Fellow at <b>IIT Tirupati</b> powered by IAS-INSA-NSAI. There he worked on Video Object Segmentation (VOS)
+                for 3 months under the supervision of <b>Dr. Rama Krishna Sai S. Gorthi</b>. Now he is doing awesome research works on Segmentation, SAM, Mamba etc. with <b>Dr. Koushik Biswas</b> under the strong
+            guidance of <b>Dr. Swalpa Kumar Roy.</b> </p>
+
+            <h3 class="extra-text-heading">Interest</h3>
+            <hr width="100%" size="1">
+            <p class="extra-text">&#x2022; Deep Learning <br> 
+                                  &#x2022; Computer Vision <br>
+                                  &#x2022; Natural Language Processing <br>
+                                  &#x2022; Image Processing <br>
+                                  &#x2022; Computational Biology</p>
+
+            <h3 class="extra-text-heading">Work Experience</h3>
+            <hr width="100%" size="1">
+            <p class="extra-text">&#x2022; Summer Research Fellow-IIT Tirupati <br> 
+                                &#x2022; Research Intern - Calcutta University <br>
+                                &#x2022; Python Developer - RecruitNxt <br>
+                              </p>
+            <h3 class="extra-text-heading">Conferences</h3>
+            <hr width="100%" size="1">
+            <p style="color: red;" class="extra-text">&#x2022; Under Development <br> 
+                                
+                            </p>
+            <h3 class="extra-text-heading">Journals</h3>
+            <hr width="100%" size="1">
+            <p style="color: red;" class="extra-text">&#x2022; Under Development <br> 
+                                
+                                </p>
+</div>
+    </div>
+</div>
+{% endblock %}

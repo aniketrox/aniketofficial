@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="jumbotron text-center" style="background-color: #f8f9fa; padding: 2rem;">
+    <div class="text-container">
+    <h3 class="display-4 text-animation" style="color: #343a40; font-size: 32px">$$ \vert \psi \rangle = \alpha \vert 0 \rangle + \beta \vert 1 \rangle $$</h3>
+    <h3 class="display-4 text-animation" style="color: #343a40; font-size: 32px">$$ \left| \alpha \right|^{2}+\left| \beta \right|^{2} = 1 $$</h3>
+    <h3 class="display-4 text-animation" style="color: #343a40; font-size: 32px">$$ \vert \varphi \rangle = \eta \vert\uparrow  \rangle + \theta \vert \downarrow  \rangle $$</h3>
+    <h3 class="display-4 text-animation" style="color: #343a40; font-size: 23px">$$ H\vert 0 \rangle =\frac{1}{\sqrt{2}}\vert 0 \rangle + \frac{1}{\sqrt{2}}\vert 1 \rangle  $$</h3>
+    </div>
+    <p class="lead" style="color: #6c757d;">Hi! Welcome to the era of <b>uncertainity</b> but I am  Pure.</p>
+    <hr class="my-4">
+    <p style="color: #6c757d;">Explore my work and contribute in popular projects.</p>
+    <a class="btn btn-primary btn-lg" href="/projects" role="button" style="margin: 0.5rem;">View Projects</a>
+    <a class="btn btn-secondary btn-lg" href="/blogs" role="button" style="margin: 0.5rem;">Read Blogs</a>
+</div>
+
+<div class="row text-center" style="margin-top: 2rem;">
+    <div class="col-md-6">
+        <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); transition: 0.3s;">
+            <img src="{{ url_for('static', filename='images/project1.jpg') }}" class="card-img-top" alt="Project 1" style="max-height: 200px; object-fit: cover;">
+            <div class="card-body">
+                <h5 class="card-title" style="color: #343a40;">Featured Project</h5>
+                <p class="card-text" style="color: #6c757d;">Check out my latest work on Project 1.</p>
+                <a href="/projects" class="btn btn-primary">Learn More</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); transition: 0.3s;">
+            <img src="{{ url_for('static', filename='images/blog1.jpg') }}" class="card-img-top" alt="Blog 1" style="max-height: 200px; object-fit: cover;">
+            <div class="card-body">
+                <h5 class="card-title" style="color: #343a40;">Latest Blog</h5>
+                <p class="card-text" style="color: #6c757d;">Read my thoughts on the latest trends in the industry.</p>
+                <a href="/blogs" class="btn btn-secondary">Read More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Contact Us Section -->
+<div class="row mt-5">
+    <div class="col-md-12 text-center">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or would like to get in touch, please use the contact form below.</p>
+        <form id="contact-form" class="mt-4">
+            <div class="form-group">
+                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
