@@ -5,14 +5,16 @@ app = Flask(__name__)
 # Dummy data
 projects = [
     {
-        'title': 'Project 1',
-        'description': 'Description of project 1',
-        'image': 'project1.png'
+        'title': 'Cross-ViT with masksemble for uncertainity estimation in Skin Cancer Diagnosis',
+        'description': 'We proposed Cross-ViT with a special Masksemble Block in order to create discriminative image features. The Masksemble layer estimates the uncertainty of a given dermatoscopy image that plays a crucial role in cancer identification, and then it is passed to the Cross ViT network for the classification task.',
+        'image': 'project1.png',
+        'project_url': 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4956250'
     },
     {
-        'title': 'Project 2',
-        'description': 'Description of project 2',
-        'image': 'project2.png'
+        'title': 'Cancer Prediction Software with Vision Transformer as backend',
+        'description': 'Developed and designed Computer Vision based medical image classification and segmentation software with Vision Transformer based architecture as a base model',
+        'image': 'project2.png',
+        'project_url': 'https://github.com/aniketrox/Cancer_prediction_software'
     },
 ]
 
