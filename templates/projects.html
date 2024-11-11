@@ -8,10 +8,10 @@
     {% for project in projects %}
     <div class="col-md-4">
         <div class="card mb-4 shadow-sm">
-            <img src="{{ url_for('static', filename='images/' ~ project.image) }}" class="card-img-top" alt="{{ project.title }}">
+            <a href="{{ project.project_url }}"><img src="{{ url_for('static', filename='images/' ~ project.image) }}" class="card-img-top" alt="{{ project.title }}"></a>
             <div class="card-body">
-                <h5 class="card-title">{{ project.title }}</h5>
-                <p class="card-text">{{ project.description }}</p>
+                <a href="{{ project.project_url }}"><h5 class="card-title">{{ project.title }}</h5></a>
+                <a href="{{ project.project_url }}"><p class="card-text">{{ project.description }}</p></a>
             </div>
         </div>
     </div>
